@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Haeun — Une présence dans ta poche</title>
-<meta name="description" content="Haeun, votre assistante Android en français. Voix naturelle hors-ligne, LLM intégré, contrôle total du téléphone.">
+<title>하은 Haeun — L'assistante Android qui agit vraiment</title>
+<meta name="description" content="Haeun, votre assistante Android qui agit vraiment : appels, SMS, administration, voix naturelles multilingues.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -13,16 +13,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Ar
 a{color:inherit;text-decoration:none}
 .wrap{max-width:760px;margin:0 auto;padding:0 24px}
 .hero{padding:80px 0 60px;text-align:center}
-.hero .badge{width:100px;height:100px;border-radius:50%;margin:0 auto 24px;background:linear-gradient(135deg,#FFC107,#FF8C00);display:flex;align-items:center;justify-content:center;font-size:44px;box-shadow:0 0 40px rgba(255,193,7,0.35)}
+.hero .badge{width:100px;height:100px;border-radius:50%;margin:0 auto 24px;background:linear-gradient(135deg,#FFC107,#FF8C00);display:flex;align-items:center;justify-content:center;font-size:44px;box-shadow:0 0 40px rgba(255,193,7,0.35);color:#1A1A1A;font-weight:800}
 .hero h1{font-size:48px;font-weight:800;letter-spacing:-1px;margin-bottom:8px}
 .hero h1 .kr{color:#FFD700}
 .hero .tag{color:#AAAAAA;font-size:17px;margin-bottom:32px}
 .hero .meta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:32px}
 .hero .meta span{background:#141414;border:1px solid #2A2A2A;border-radius:20px;padding:6px 14px;font-size:13px;color:#CCCCCC}
-.btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#FFC107,#FF8C00);color:#1A1A1A;font-weight:700;font-size:16px;padding:18px 40px;border-radius:40px;border:none;cursor:pointer;transition:transform .15s,box-shadow .15s;box-shadow:0 8px 30px rgba(255,193,7,0.25)}
-.btn:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(255,193,7,0.4)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#FFC107,#FF8C00);color:#1A1A1A;font-weight:700;font-size:16px;padding:18px 40px;border-radius:40px;border:none;cursor:pointer;box-shadow:0 8px 30px rgba(255,193,7,0.25)}
 .dl-info{margin-top:14px;font-size:13px;color:#888888}
-.dl-count{margin-top:10px;font-size:13px;color:#FFD700;font-weight:600}
 section{padding:56px 0}
 .section-title{font-size:12px;font-weight:700;letter-spacing:2px;color:#FFD700;text-transform:uppercase;margin-bottom:24px}
 h2{font-size:32px;font-weight:700;margin-bottom:16px;line-height:1.3}
@@ -30,13 +28,11 @@ h2 .accent{color:#FFD700}
 .lead{color:#AAAAAA;font-size:15px;margin-bottom:32px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media (max-width:600px){.grid{grid-template-columns:1fr}}
-.card{background:#141414;border:1px solid #2A2A2A;border-radius:20px;padding:24px;transition:border-color .15s,transform .15s}
-.card:hover{border-color:#FFD700;transform:translateY(-2px)}
+.card{background:#141414;border:1px solid #2A2A2A;border-radius:20px;padding:24px}
 .card .ic{font-size:28px;margin-bottom:12px}
 .card h3{font-size:17px;font-weight:700;margin-bottom:8px}
 .card p{font-size:14px;color:#AAAAAA;line-height:1.5}
 .v7{background:linear-gradient(135deg,#1A1A1A,#141414);border:1px solid rgba(255,215,0,0.3);border-radius:24px;padding:40px 32px;position:relative;overflow:hidden}
-.v7::before{content:"";position:absolute;top:-100px;right:-100px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(255,193,7,0.15),transparent 70%)}
 .v7 .tag{display:inline-block;background:linear-gradient(135deg,#FFC107,#FF8C00);color:#1A1A1A;font-size:11px;font-weight:800;letter-spacing:1.5px;padding:6px 14px;border-radius:20px;margin-bottom:20px}
 .v7 h2{position:relative}
 .v7 .lead{position:relative;color:#CCCCCC;margin-bottom:28px;font-size:15px}
@@ -46,8 +42,7 @@ h2 .accent{color:#FFD700}
 .v7 ul li .check{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:linear-gradient(135deg,#FFC107,#FF8C00);color:#1A1A1A;font-size:13px;font-weight:bold;display:flex;align-items:center;justify-content:center;margin-top:2px}
 .pricing{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
 @media (max-width:700px){.pricing{grid-template-columns:1fr}}
-.price{background:#141414;border:1px solid #2A2A2A;border-radius:20px;padding:28px 22px;position:relative;transition:transform .15s}
-.price:hover{transform:translateY(-3px)}
+.price{background:#141414;border:1px solid #2A2A2A;border-radius:20px;padding:28px 22px}
 .price.featured{border-color:#FFD700;background:linear-gradient(180deg,#1A1500,#141414);box-shadow:0 0 40px rgba(255,193,7,0.15)}
 .price .plan{font-size:14px;color:#AAAAAA;margin-bottom:6px}
 .price .amt{font-size:28px;font-weight:800;color:#FFD700;margin-bottom:4px}
@@ -58,105 +53,125 @@ h2 .accent{color:#FFD700}
 .mvola{background:#141414;border:1px solid #2A2A2A;border-radius:20px;padding:24px;text-align:center;margin-top:24px}
 .mvola .lbl{font-size:13px;color:#AAAAAA;margin-bottom:8px}
 .mvola .num{font-size:26px;font-weight:800;color:#FFD700;letter-spacing:1px}
+.note{background:#141414;border:1px solid #2A2A2A;border-radius:16px;padding:18px 20px;font-size:14px;color:#CCCCCC;line-height:1.6;margin-top:16px}
 footer{padding:56px 0 40px;text-align:center;border-top:1px solid #1A1A1A;margin-top:40px}
 footer p{color:#888888;font-size:13px;margin-bottom:6px}
 footer .made{color:#AAAAAA;font-size:14px;margin-bottom:20px}
 footer .links{display:flex;gap:20px;justify-content:center;font-size:13px}
-footer a{color:#FFD700;transition:opacity .15s}
-footer a:hover{opacity:0.7}
+footer a{color:#FFD700}
 </style>
 </head>
 <body>
 <div class="wrap">
+
   <div class="hero">
-    <div class="badge">🌸</div>
+    <div class="badge">하</div>
     <h1>하은 <span class="kr">Haeun</span></h1>
-    <p class="tag">Une présence dans ta poche. Pas une simple IA.</p>
+    <p class="tag">Pas un chatbot. Une vraie assistante qui agit sur ton téléphone.</p>
     <div class="meta">
-      <span>🎙️ Voix naturelle</span>
-      <span>🧠 LLM intégré</span>
-      <span>🔒 100% local</span>
-      <span>🇫🇷 Français</span>
+      <span>🎙️ Voix naturelles</span>
+      <span>🧠 Multi-modèles</span>
+      <span>📞 Appels & SMS</span>
+      <span>🛡️ Mode admin</span>
       <span>📱 Android 6+</span>
     </div>
-    <a href="https://github.com/Fitiavana15/haeun/releases/download/v7.0/HaeunV7.apk" class="btn">⬇️ Télécharger l'APK</a>
-    <p class="dl-info">Version 7.0 · 92 Mo · Gratuit</p>
-    <p class="dl-count" id="dl-count">📊 Chargement du nombre de téléchargements...</p>
+    <a href="https://github.com/Fitiavana15/haeun/releases/download/v8.0/HaeunV8.apk" class="btn">⬇️ Télécharger l'APK</a>
+    <p class="dl-info">Version 8.0 · 96 Mo · Gratuit · Sans pub</p>
   </div>
+
   <section>
-    <div class="section-title">Capacités</div>
-    <h2>Tout ce que Haeun <span class="accent">peut faire</span></h2>
-    <p class="lead">Un assistant qui comprend tes phrases naturelles. Pas besoin de commandes spéciales.</p>
+    <p class="lead" style="text-align:center;font-size:16px;color:#CCCCCC;max-width:640px;margin:0 auto 32px">
+      La plupart des IA se contentent de répondre à des questions. Haeun, elle, <b style="color:#FFD700">agit</b>. Elle envoie tes SMS, programme tes messages, lit tes notifications, passe tes appels, contrôle ton système, et peut même administrer ton appareil — depuis une simple conversation vocale ou écrite.<br><br>
+      Tu n'as pas besoin d'apprendre des commandes rigides. Parle-lui naturellement. Elle comprend l'intention.
+    </p>
+  </section>
+
+  <section>
+    <div class="section-title">Ce que Haeun fait concrètement</div>
+    <h2>Un assistant qui <span class="accent">agit vraiment</span></h2>
     <div class="grid">
-      <div class="card"><div class="ic">📞</div><h3>Appels</h3><p>« Appelle maman » ou « Peux-tu appeler Papa ? » — Haeun comprend la politesse.</p></div>
-      <div class="card"><div class="ic">💬</div><h3>SMS</h3><p>« Dis à Marie que je rentre tard » — envoie directement.</p></div>
-      <div class="card"><div class="ic">⚡</div><h3>Contrôle système</h3><p>Lampe, volume, luminosité, Wi-Fi, Bluetooth, verrouillage.</p></div>
-      <div class="card"><div class="ic">🎵</div><h3>YouTube</h3><p>« Cherche Shape of You sur YouTube » — lance la recherche.</p></div>
-      <div class="card"><div class="ic">🔍</div><h3>Fouille locale</h3><p>Cherche dans tes SMS et historiques d'appel.</p></div>
-      <div class="card"><div class="ic">🛡️</div><h3>Administrateur</h3><p>Efface le PIN à distance via un simple SMS.</p></div>
+      <div class="card"><div class="ic">📞</div><h3>Téléphone et messages</h3><p>Passer des appels vers n'importe quel contact, envoyer un SMS, programmer un message à une date précise, lire tes SMS reçus à voix haute, chercher dans tes messages et tes appels, fouiller dans les messages déjà supprimés, consulter ton journal d'appels complet.</p></div>
+      <div class="card"><div class="ic">🛡️</div><h3>Administration et sécurité</h3><p>Mode administrateur complet — verrouillage d'appareil, désactivation caméra. Effacer le PIN de verrouillage à distance par SMS, sans jamais l'afficher. Protéger Haeun par un code PIN. Empêcher la désinstallation sans autorisation.</p></div>
+      <div class="card"><div class="ic">🎛️</div><h3>Contrôle du système</h3><p>Lampe torche, volume, luminosité réglables par la voix. Wi-Fi, Bluetooth, localisation. Lancement de n'importe quelle app installée. Alarmes et notes.</p></div>
+      <div class="card"><div class="ic">📚</div><h3>Études et travail</h3><p>Aide aux devoirs, rédaction de dissertations, recherche et synthèse, traduction entre 99+ langues, explications de concepts complexes, correction et amélioration de textes, préparation d'exposés.</p></div>
+      <div class="card"><div class="ic">🎙️</div><h3>Voix naturelles multilingues</h3><p>Plusieurs voix naturelles parmi les meilleures du moment — voix cloud très réalistes, voix hors ligne sans internet, voix native de ton téléphone. Détection automatique de la langue. FR, EN, ES, MG, KO, JA, et 99+ langues.</p></div>
+      <div class="card"><div class="ic">🧠</div><h3>Intelligence multi-modèles</h3><p>Haeun utilise plusieurs modèles de dernière génération avec bascule automatique. Tu ne restes jamais sans réponse, même aux heures de pointe.</p></div>
+      <div class="card"><div class="ic">💭</div><h3>Mémoire et personnalité</h3><p>Elle se souvient de ton prénom, ton anniversaire, tes préférences. Journal personnel des échanges importants. Exprime des émotions. S'adapte à ton ton.</p></div>
+      <div class="card"><div class="ic">🎨</div><h3>Outils du quotidien</h3><p>Génération d'images, respiration guidée, suivi d'humeur avec analyse, journal, tâches, pomodoro, bibliothèque d'images générées.</p></div>
     </div>
   </section>
+
   <section>
     <div class="v7">
-      <span class="tag">✨ NOUVEAU — V7 DISPONIBLE</span>
-      <h2>Le vrai assistant <span class="accent">personnel</span></h2>
-      <p class="lead">Le LLM est arrivé. Haeun comprend vraiment le contexte, se souvient de tes conversations, et agit naturellement sous ton contrôle total.</p>
+      <span class="tag">✨ NOUVEAU — V8 DISPONIBLE</span>
+      <h2>Le mode <span class="accent">Auto</span></h2>
+      <p class="lead">Active le mode automatique et Haeun devient autonome.</p>
       <ul>
-        <li><span class="check">✓</span> Comprend des phrases complexes sans commande stricte</li>
-        <li><span class="check">✓</span> Se souvient de tes conversations (mémoire continue)</li>
-        <li><span class="check">✓</span> Voix naturelle hors-ligne (Piper TTS)</li>
-        <li><span class="check">✓</span> Enchaîne plusieurs actions en un seul message</li>
-        <li><span class="check">✓</span> Connaît l'heure, la batterie, la météo, ta localisation</li>
-        <li><span class="check">✓</span> Fonctionne même sans internet pour les actions locales</li>
-        <li><span class="check">✓</span> Contrôle total : tu peux la désactiver à tout moment</li>
+        <li><span class="check">✓</span> Elle peut agir seule, sans que tu lui demandes</li>
+        <li><span class="check">✓</span> Elle peut te parler spontanément — te rappeler qu'il est tard par exemple</li>
+        <li><span class="check">✓</span> Elle peut sortir de l'app, faire quelque chose, et revenir</li>
+        <li><span class="check">✓</span> Elle peut te contredire si elle n'est pas d'accord</li>
+        <li><span class="check">✓</span> Mode le plus avancé — désactivé par défaut</li>
       </ul>
     </div>
   </section>
+
+  <section>
+    <div class="v7">
+      <h2>Mises à jour <span class="accent">automatiques</span></h2>
+      <p class="lead">Haeun vérifie d'elle-même si une nouvelle version est disponible.</p>
+      <ul>
+        <li><span class="check">✓</span> Si l'APK est déjà installé, tu n'as rien à faire</li>
+        <li><span class="check">✓</span> L'app t'informe quand une mise à jour sort</li>
+        <li><span class="check">✓</span> Installation en un clic</li>
+        <li><span class="check">✓</span> Tes données, préférences et mémoire sont conservées</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Installation</div>
+    <h2>Simple à <span class="accent">installer</span></h2>
+    <div class="note">
+      <b style="color:#FFD700">1.</b> Télécharge le fichier HaeunV8.apk ci-dessous<br>
+      <b style="color:#FFD700">2.</b> Ouvre-le depuis tes téléchargements<br>
+      <b style="color:#FFD700">3.</b> Autorise l'installation depuis une source inconnue<br>
+      <b style="color:#FFD700">4.</b> Suis l'accueil — Haeun se présente et apprend à te connaître
+    </div>
+    <p class="dl-info" style="text-align:center;margin-top:20px">Compatible Android 6.0+ · ~96 Mo · Aucune publicité</p>
+  </section>
+
   <section>
     <div class="section-title">Tarifs</div>
     <h2>Gratuit, ou <span class="accent">Premium</span></h2>
-    <p class="lead">20 messages gratuits par jour. Premium pour l'illimité.</p>
+    <p class="lead">Haeun est gratuite : 20 messages par jour et 5 actions par type — appels, SMS, images, etc.</p>
     <div class="pricing">
-      <div class="price"><div class="plan">1 mois</div><div class="amt">8 000 Ar</div><div class="save"></div><ul><li>Messages illimités</li><li>Actions illimitées</li><li>Toutes les fonctions</li></ul></div>
-      <div class="price featured"><div class="plan">3 mois</div><div class="amt">19 200 Ar</div><div class="save">Économise 4 800 Ar</div><ul><li>Messages illimités</li><li>Actions illimitées</li><li>Toutes les fonctions</li></ul></div>
-      <div class="price"><div class="plan">1 an</div><div class="amt">67 200 Ar</div><div class="save">Économise 28 800 Ar</div><ul><li>Messages illimités</li><li>Actions illimitées</li><li>Toutes les fonctions</li></ul></div>
+      <div class="price"><div class="plan">1 mois</div><div class="amt">8 000 Ar</div><div class="save"></div><ul><li>Messages illimités</li><li>Actions illimitées</li><li>Voix prioritaires</li></ul></div>
+      <div class="price featured"><div class="plan">3 mois</div><div class="amt">19 200 Ar</div><div class="save">Économise 4 800 Ar</div><ul><li>Messages illimités</li><li>Actions illimitées</li><li>Voix prioritaires</li></ul></div>
+      <div class="price"><div class="plan">1 an</div><div class="amt">67 200 Ar</div><div class="save">Économise 28 800 Ar</div><ul><li>Messages illimités</li><li>Actions illimitées</li><li>Voix prioritaires</li></ul></div>
     </div>
     <div class="mvola">
       <div class="lbl">💳 Paiement par MVola</div>
       <div class="num">038 46 626 15</div>
     </div>
+    <p class="dl-info" style="text-align:center;margin-top:20px">Rien ne t'oblige à payer. Haeun reste utile même en version gratuite.</p>
   </section>
+
+  <section>
+    <div class="section-title">À propos</div>
+    <h2>Fait à <span class="accent">Madagascar</span></h2>
+    <p class="lead">Haeun est développée à Madagascar, par un seul développeur. Elle n'est pas parfaite — elle apprend, elle évolue, elle s'améliore à chaque version.<br><br>Chaque fonctionnalité a été pensée pour rendre ton téléphone plus simple à utiliser. Pas pour te vendre quelque chose. Pas pour t'espionner. Pour t'aider, vraiment.</p>
+  </section>
+
   <footer>
     <p class="made">Haeun — Fait avec ❤️ à Madagascar</p>
-    <p>par RANDRIAMIFIDIMANANA Manda Fitiavana</p>
+    <p>par RANDRIAMIFIFIDIMANANA Manda Fitiavana</p>
     <div class="links">
       <a href="https://github.com/Fitiavana15/haeun" target="_blank">GitHub</a>
       <a href="https://github.com/Fitiavana15/haeun/issues" target="_blank">Support</a>
     </div>
   </footer>
-</div>
 
-<script>
-// Compteur de téléchargements en direct via l'API GitHub
-fetch('https://api.github.com/repos/Fitiavana15/haeun/releases/tags/v7.0')
-  .then(r => r.json())
-  .then(data => {
-    if (data.assets && data.assets.length > 0) {
-      const count = data.assets[0].download_count || 0;
-      const el = document.getElementById('dl-count');
-      if (el) {
-        if (count === 0) el.textContent = '📊 Sois le premier à télécharger !';
-        else if (count === 1) el.textContent = '📊 1 téléchargement';
-        else el.textContent = '📊 ' + count + ' téléchargements';
-      }
-    } else {
-      document.getElementById('dl-count').textContent = '';
-    }
-  })
-  .catch(() => {
-    const el = document.getElementById('dl-count');
-    if (el) el.textContent = '';
-  });
-</script>
+</div>
 </body>
-  </html>
+</html>
